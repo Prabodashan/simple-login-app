@@ -37,6 +37,7 @@ app.use((req, res) => {
 });
 
 // Initialize the connection
+// Initialize the connection
 app.listen(PORT, () => {
   console.log(`Server is running at ${PORT}`);
 });
