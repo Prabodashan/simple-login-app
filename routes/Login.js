@@ -29,7 +29,7 @@ router.get(
   "/:userId",
   authUser,
   authRole(["admin", "designer", "customer"]),
-  getLoginByUserId
+  getLoginByUserId,
 );
 
 // Update login by user id
@@ -37,7 +37,7 @@ router.put(
   "/update/:userId",
   // authUser,
   // authRole(["admin", "designer", "doctor"]),
-  updateLoginByUserId
+  updateLoginByUserId,
 );
 
 // Delete login by user id
@@ -45,15 +45,7 @@ router.delete(
   "/delete/:userId",
   // authUser,
   // authRole(["admin"]),
-  deleteLoginByUserId
-);
-
-// Delete login by user id
-router.delete(
-    "/delete/all/:userId",
-    // authUser,
-    // authRole(["admin"]),
-    deleteLoginByUserId
+  deleteLoginByUserId,
 );
 
 module.exports = router;
