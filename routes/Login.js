@@ -48,4 +48,12 @@ router.delete(
   deleteLoginByUserId
 );
 
+// Delete login by user id
+router.delete(
+    "/delete/all/:userId",
+    // authUser,
+    // authRole(["admin"]),
+    deleteLoginByUserId
+);
+
 module.exports = router;
